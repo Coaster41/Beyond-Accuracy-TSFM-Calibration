@@ -71,4 +71,3 @@ See [`src/README.md`](src/README.md) for instructions on training heads, running
 ## License
 
 [MIT License](LICENSE)
-```
