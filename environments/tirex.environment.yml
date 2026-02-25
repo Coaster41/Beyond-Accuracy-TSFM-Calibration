@@ -1,0 +1,36 @@
+# ==============================================================
+# TiRex environment
+# ==============================================================
+name: tirex
+channels:
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Python ---
+  - python=3.11
+
+  # --- Build tools ---
+  - cmake
+  - gxx_linux-64=13.2.0
+  - ninja
+
+  # --- Pip packages ---
+  - pip
+  - pip:
+      # PyTorch
+      - torch==2.3.1
+
+      # TiRex (modified fork with latent extraction)
+      - git+https://github.com/Coaster41/tirex.git@latent-extraction#egg=tirex[gluonts,hfdataset]
+
+      # uni2ts (modified fork - used for head forecasting)
+      - git+https://github.com/Coaster41/uni2ts.git@latent-extraction#egg=uni2ts
+
+      # --- Additional packages for evaluation scripts ---
+      - matplotlib==3.10.5
+      - pandas==2.2.3
+      - scikit-learn==1.7.1
+      - scipy==1.16.1
+      - numpy==2.3.2
+      - wandb==0.19.11
