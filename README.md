@@ -59,12 +59,12 @@ See [`src/README.md`](src/README.md) for instructions on training heads, running
 
 ```bibtex
 @inproceedings{
-    CITATION_KEY,
-    title={Beyond Accuracy: Are Time Series Foundation Models Well-Calibrated?},
-    author={AUTHOR_NAMES},
-    booktitle={The Fourteenth International Conference on Learning Representations},
-    year={2026},
-    url={https://openreview.net/forum?id=nGBN7UjHcy}
+adler2026beyond,
+title={Beyond Accuracy: Are Time Series Foundation Models Well-Calibrated?},
+author={Adler, Coen and Chang, Yuxin and Draxler, Felix and Abdi, Samar and Smyth, Padhraic},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=nGBN7UjHcy}
 }
 ```
 
